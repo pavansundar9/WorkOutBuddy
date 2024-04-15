@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Average+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    
+    <title>Work Out Tracker</title>
+</head>
+<body class="font-sans" style=" font-family: 'Montserrat', sans-serif;">
+    <div class="relative flex justify-center my-5">
+        <div class="absolute left-2 w-8 h-8 bg-[#f4f4f4] rounded-full flex justify-center items-center">
+            <i class="fa fa-angle-left text-2xl border-0 border-gray-300"></i>
+        </div>        
+        <h2 class="font-semibold text-2xl text-center">Workout Tracker</h2>
+    </div>
+    <a href="calender.html"><img src="workoutchart.png" alt="" class="mx-auto w-96 mt-10 mb-10 rounded-md"></a>
+    <div class="flex justify-center items-center gap-4 mx-4 mb-5 rounded-lg p-2 bg-gradient-to-r from-[#dce1f5] to-[#fff]">
+        <i class="fal fa-exclamation-triangle text-2xl  text-blue-500 ml-3"></i>
+        <p>You've burned fewer calories than yesterday. Time to get moving! </p>
+    </div>
+    <div>
+        <div class="flex justify-between items-center p-4 top-0">
+            <h2 class="font-semibold text-xl">Upcoming Workout</h2>
+            <p class="text-gray-400">See more</p>
+        </div>
+        <div class="flex justify-center items-center m-4 shadow-sm rounded-lg">
+            <div class="p-4">
+                <div class="bg-[#819aff26] rounded-full">
+                    <img src="women_workout_.png" alt="" class="object-cover w-16 h-16 rounded-full"/>
+                </div>
+            </div>
+            <div class="ml-4">
+                <h2 class="text-lg font-semibold">Full Body Workout</h2>
+                <p class="text-gray-500 text-sm">Today 3pm</p>
+            </div>
+            <div class="ml-auto">
+                <label for="fullbody" class="flex items-center cursor-pointer select-none text-gray-600">
+                    <div class="relative">
+                        <input type="checkbox" id="fullbody" class="peer sr-only"/>
+                        <div class="block h-8 rounded-full bg-[#9fb2ff] w-14"></div>
+                        <div class="absolute flex items-center justify-center w-6 h-6 transition bg-white rounded-full dot left-1 top-1 peer-checked:translate-x-full peer-checked:bg-white"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="flex justify-center items-center m-4 shadow-sm rounded-lg">
+            <div class="p-4">
+                <div class="bg-gray-200 rounded-full">
+                    <img src="women_yoga.png" alt="" class="object-cover w-16 h-16 rounded-full shadow-inner"/>
+                </div>
+            </div>
+            <div class="ml-4">
+                <h2 class="text-lg font-semibold">Upper Body Workout</h2>
+                <p class="text-gray-500 text-sm">4 Feb, 3:30pm</p>
+            </div>
+            <div class="ml-auto">
+                <label for="upperbody" class="flex items-center cursor-pointer select-none text-gray-600">
+                    <div class="relative">
+                        <input type="checkbox" id="upperbody" class="peer sr-only"/>
+                        <div class="block h-8 rounded-full bg-[#9fb2ff] w-14"></div>
+                        <div class="absolute flex items-center justify-center w-6 h-6 transition bg-white rounded-full dot left-1 top-1 peer-checked:translate-x-full peer-checked:bg-white"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="mb-5">
+        <div class="flex justify-between items-center p-4 top-0">
+            <h2 class="font-semibold text-xl">What Do You Want to Train?</h2>
+            <!-- <p class="text-gray-400">See more</p> -->
+        </div>
+        <div class="flex justify-between bg-[#8cb1ff99] p-4 m-4 mb-24 rounded-lg">
+            <div>
+                <p class="hover:underline">Full Body Workout</p>
+                <p class="hover:underline">Arms</p>
+                <p class="hover:underline">Chest</p>
+                <p class="hover:underline">Legs</p>
+            </div>
+            <div class="rounded-full bg-[#e6f7fc]">
+                <img src="full_body.png"  alt="" class="w-24 h-24"/>
+            </div>
+        </div>
+    </div>
+        
+    <div class="fixed bottom-0 left-0 w-full bg-white p-4">
+        <div class="flex items-center justify-between">
+            <i class="far fa-house-blank text-2xl text-gray-400"></i>
+            <img src="gallary.png" alt="" class="w-10 h-10">
+            <div class="flex justify-center items-center scale-150 rounded-full p-5 w-5 h-5 bg-gradient-to-r from-[#e6f7fc] to-[#9fb2ff] text-white border-none -mt-8">
+                <i class="fa-sharp fa-thin fa-magnifying-glass text-xl"></i>
+            </div>
+            <i class="fa-thin fa-camera text-3xl text-gray-400"></i>
+            <i class="fa-thin fa-user text-3xl text-gray-400"></i>
+        </div>
+    </div>
+</body>
+</html>
